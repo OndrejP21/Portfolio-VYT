@@ -1,0 +1,112 @@
+h3 {
+    font-size: 30px;
+    color: #000411;
+}
+
+h4 {
+    font-size: 24px;
+    font-weight: 800;
+}
+
+.kontaktDiv{
+    position: relative;
+    width: 90%;
+    min-height: 450px;
+    margin-left: 5px;
+    border: 4px solid gray;
+}
+
+.kontaktDiv img[alt="avatar"]{
+    margin-top: -10px;
+}
+
+.kontaktDiv img[alt="icon-phone"]{
+    display: block;
+    margin-top: 0;
+    float: left;
+}
+
+.kontaktDiv img[alt="icon-mail"]{
+    display: block;
+    margin-top: 0;
+    float: left;
+}
+
+.kontaktDiv .p-1 {
+    display: inline-block;
+    margin-top: 7px;
+}
+
+.kontaktDiv .p-2 {
+    display: inline-block;
+    margin-top: 5px;
+}
+
+.kontaktDiv p:hover {
+    text-decoration: underline;
+}
+
+.kontaktDiv iframe {
+    position: absolute;
+    top: 10px;
+    left: 350px;
+}
+
+form {
+    margin-left: 20px;
+    width: 50%;
+}
+
+form input {
+    margin-top: 10px;
+}
+
+form input[value="Reset"]{
+    height: 30px;
+    width: 50px;
+}
+
+form input[value="Odeslat"]{
+    height: 30px;
+    width: 60px;
+}
+
+table {
+    padding-top: 40px;
+    margin: 0 auto;
+}
+
+table thead tr th{
+    font-weight: 900;
+    font-size: 20px;
+}
+
+table tr:not(.no-border) td{
+    padding: 20px;
+    border-bottom: 3px solid gray;
+}
+
+table tr td:not(.no-border) {
+    border-left: 3px solid gray;
+}
+
+.responzive {
+    display: none;
+}
+
+@media only screen and (max-width: 1400px){
+    .responzive {
+        display: block;
+    }
+
+    .kontaktDiv {
+        width: 60%;
+        margin: 0 auto;
+    }
+
+    .kontaktDiv iframe {
+        position: inherit;
+        width: 150%;
+        height: 300px;
+    }
+}

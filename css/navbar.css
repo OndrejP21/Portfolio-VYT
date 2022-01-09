@@ -1,0 +1,180 @@
+#navbar {
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+#navbar .navbar-1{
+    background-color: #160C28;
+    height: 60px;
+}
+
+#navbar .navbar-2 {
+    height: 150px;
+    background-image: url("../img/wallpaper.jpg");
+    background-color: black;
+}
+
+#navbar .navbar-3 {
+    background-color: #160C28;
+    height: 60px;
+    color: #EFCB68;
+    display: flex;
+    flex-direction: row;
+}
+
+#navbar .navbar-3 .navbar-3-1 {
+    flex: 35%;
+}
+
+#navbar .navbar-3 .navbar-3-2 {
+    flex: 65%;
+}
+
+#navbar h2{
+    font-size: 30px;
+    margin-top: 10px;
+}
+
+#navbar img {
+    float: left;
+}
+
+.navbar-3-2 nav ul {
+    list-style-type: none;
+    margin-left: 30px;
+}
+
+.navbar-3-2 nav ul li {
+    float: left;
+    margin-top: 15px;
+}
+
+.navbar-3-2 nav ul li a {
+    padding: 25px 25px 25px 40px;
+    text-decoration: none;
+    color: #EFCB68;
+    transition: 1.5s;
+}
+
+.navbar-3-2 nav ul li a:hover {
+    background-color: #E1EFE6;
+    color: #000411;
+}
+
+.navbar-3-2 .active {
+    background-color: #E1EFE6;
+    color: #000411;
+}
+
+.icon {
+    filter: invert(1);
+}
+
+h1 {
+    color: white;
+    text-align: center;
+}
+
+#menu-icon {
+    filter: invert(1);
+    display: none;
+}
+
+#menu-icon:hover {
+    cursor: pointer;
+}
+
+.small-navbar-3{
+    display: none;
+    flex-wrap: wrap;
+    background-color: #160C28;
+    color: white;
+}
+
+#arrow-icon {
+    filter: invert(1);
+}
+
+#arrow-icon:hover {
+    cursor: pointer;
+}
+
+.small-navbar-3 nav ul {
+    list-style: none;
+    margin-top: 10px;
+}
+
+.small-navbar-3 nav ul li {
+    padding: 14px 0;
+    width: 100%;
+}
+
+.small-navbar-3 nav ul li:not(.active){
+    border-bottom: 2px solid white;
+}
+
+.small-navbar-3 nav ul li a {
+    text-decoration: none;
+    color: #EFCB68;
+    padding-left: 20%;
+    padding-right: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.small-navbar-3 nav ul li:hover {
+    border-bottom: 4px solid #EFCB68;
+}
+
+.small-navbar-3 .active {
+    border-bottom: 4px solid #EFCB68;
+}
+
+
+@media only screen and (max-width: 992px){
+    .navbar-3-2 nav {
+        display: none;
+    }
+
+    #menu-icon{
+        display: block;
+    }
+
+    #navbar .navbar-3 .navbar-3-1 {
+        flex-basis: 90%;
+    }
+
+    #navbar h2 {
+        font-size: 20px;
+    }
+
+    #navbar .navbar-3 .navbar-3-2 {
+        flex: 10%;
+    }
+
+    #navbar {
+        margin: 0;
+        width: 100%;
+    }
+
+    .small-navbar-3 .small-navbar-3-1 {
+        flex-basis: 85%;
+    }
+
+    .small-navbar-3 .small-navbar-3-2 {
+        flex-basis: 15%;
+    }
+
+    .small-navbar-3 .small-navbar-3-3 {
+        flex-basis: 100%;
+    }
+
+}
+
+@media only screen and (min-width: 993px) and (max-width: 1700px){
+    #navbar {
+        margin: 0;
+        width: 100%;
+    }
+}
